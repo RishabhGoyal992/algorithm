@@ -1,3 +1,6 @@
+//THERE ARE TWO APPROACHES DISCUSSED HERE. FIRST ONE WITHOUT THE CONCEPT OF DYNAMIC PROGRAMMING AND SECOND ONE USING THE CONCEPTS OF DYNAMIC PROGRAMMING. IT IS SHOWN HOW DP SOLUTION IS BETTER THAN NON DP SOLUTION IN TERMS OF TIME COMPLEXITY.
+
+
 //THE FIRST PROPOSED SOLUTION IS WITHOUT USING DYNAMIC PROGRAMMING 
 
 //objective - Provided with a set of positive valued integers, and a sum, say whether there exists a subset of the given set sucht that the sum is equal to the given sum variable's value.
@@ -54,10 +57,10 @@ int main()
      printf("No subset with given sum"); 
   return 0; 
 } 
-
+/*
 SAMPLE OUTPUT of first solution without dynamic programming - 
 Found a subset with given sum
-
+*/
 
 
 
@@ -72,7 +75,7 @@ using dynamic programming we can solve this in pseudo-polynomial time. Let us ma
 */
 
 
-code - 
+//code - 
 
 #include <stdio.h> 
 int ss(int s[], int n, int sum) 
@@ -117,8 +120,12 @@ int main()
   return 0; 
 } 
 
-
+/*
 SAMPLE OUTPUT for second solution using dynamic programming - 
 Found a subset with given sum
 
 Time complexity of the second proposed solution that uses dynamic programming approach is O(sum*n).
+*/
+
+
+
