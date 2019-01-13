@@ -1,3 +1,16 @@
+/*
+algo used - 
+1 take input for s, d, w in array of structure
+2 sort it
+3 while(all vertex are not covered){
+    3.1 take the edge with min weight and that is not visited yet
+    3.2 check for cycle after adding the edge
+    3.3 add it if it does not form any cycle after adding
+        3.3.1 if added mark s and d as visited vertices 
+
+}
+*/
+
 #include <iostream>
 
 using namespace std;
