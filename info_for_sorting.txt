@@ -1,0 +1,1 @@
+for sorting only do insertion sort, merge sort, and quick sort.(enough for companies)
