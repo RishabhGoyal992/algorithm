@@ -1,3 +1,15 @@
+/* 
+
+we can also use interpolation search to search an element, but for that we need to have our elements first sorted then only we can apply it.
+interpolation search time complexity : 
+best case : O(log log n)
+worst case : O(n)
+
+where as 
+binary search takes O(log n)
+
+*/
+
 #include <iostream>
 
 using namespace std;
