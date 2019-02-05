@@ -1,5 +1,7 @@
 //do not implement rabin karp(only read) as it is never asked in placements
 
+// only KMP IS ASKED IN INTERVIEWS FOR PATTERN MATCHING 
+
 #include <bits/stdc++.h>
 
 using namespace std;
