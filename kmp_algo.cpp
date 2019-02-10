@@ -2,6 +2,9 @@
 
 // only KMP IS ASKED IN INTERVIEWS FOR PATTERN MATCHING 
 
+// https://www.youtube.com/watch?v=GTJr8OvyEVQ
+// & geeksforgeeks
+
 #include <bits/stdc++.h>
 
 using namespace std;
