@@ -18,7 +18,7 @@ void merge(int a[], int l, int m, int r){
     int j = 0;
     int k = l;
     while(i<n1 && j<n2){
-        if(x[i] < y[j]){
+        if(x[i] <= y[j]){
             a[k] = x[i];
             i++;
             k++;
