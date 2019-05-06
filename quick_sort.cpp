@@ -1,50 +1,44 @@
+//   https://www.youtube.com/watch?v=COk73cpQbFQ
+
+
 #include <iostream>
 
 using namespace std;
 
-int partition(int a[], int low, int high){
-    int pivot = a[high];
-    int i = low-1;
-    
-    for(int j = low;j<=high-1;j++){
-        if(a[j] <= pivot){
-            i++;
-            
-            int temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-            
+int partition(int a[], int s, int e){
+    int pivot = a[e];
+    int pindex = s;
+    for(int i=s;i<e;i++){
+        if(a[i] <= pivot){
+            swap(a[i],a[pindex]);
+            pindex++;
         }
     }
-    
-    int temp = a[i+1];
-    a[i+1] = a[high];
-    a[high] = temp;
-    
-    return (i+1);
+    swap(a[pindex],a[e]);
+    return pindex;
 }
 
-void quicksort(int a[], int low, int high){
-    if(low < high){
-        int pi = partition(a,low,high);
-        quicksort(a,low,pi-1);
-        quicksort(a,pi+1,high);
+void quicksort(int a[], int s, int e){
+    if(s<e){
+        int index = partition(a,s,e);
+        quicksort(a,s,index-1);
+        quicksort(a,index+1,e);
     }
 }
 
 int main(){
-    cout<<"enter n : ";
     int n;
+    cout<<"size : ? ";
     cin>>n;
-    cout<<"\nenter the elements : \n";
     int a[n];
+    cout<<"enter the elements : \n";
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    
     quicksort(a,0,n-1);
+    cout<<endl<<"sorted : ";
+    cout<<endl;
     
-    cout<<"\nsorted elements : ";
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
